@@ -1,0 +1,167 @@
+/* Mobile && Tablet */
+@media (min-width: 1025px) {
+
+    .mobile-table {
+        display: none;
+    }
+
+}
+
+
+/* Mobile && Tablet */
+@media (max-width: 1024px) {
+    .header {
+        background-color: var(--primary-color);
+    }
+
+    .mobile-table {
+        width: 100%;
+        display: flex;
+        color: var(--white-color);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mt-bars i , .mt-user{
+        font-size: 3rem;
+    }
+
+    .mt-bars i:hover , .mt-user i:hover{
+        opacity: 0.9;
+        cursor: pointer;
+        
+    }
+
+
+    .mt-logo img {
+        width: 160px;
+    }
+
+    .h-logo  , .h-right {
+        display: none;
+    }
+
+    .nav-list {
+        height: 300px;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background-color: var(--white-color);
+        align-items: flex-start;
+        padding-bottom: 50px;
+        box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
+        animation: dropDown ease-in 0.5s;
+        display: none;
+    }
+
+    .nav-item {
+        width: 100%;
+        height: 30px;
+    }
+
+    .nav-item--link { 
+        color: var(-- text-color);
+        height: 30px;
+        padding: 0 50px;
+        display: block;
+        
+    }
+    
+
+    .subnav {
+        left: auto;
+        right: 0;
+    }
+
+
+    .slider-text--heading {
+        font-size: 3rem;
+    }
+
+    .slider-text--center {
+        font-size: 7rem;
+    }
+
+    .slider-text--footer {
+        font-size: 2rem;
+    }
+
+    
+    .prev-slider , .next-slider {
+        height: 60px;
+        width: 60px;
+    }
+
+    .tour-list {
+        height: 560px;
+        
+    }
+
+    .tour-heading {
+        height: 360px;
+    }
+
+    .tour-heading--img {
+        height: 90%;
+    }
+
+    .tour-heading--box {
+        height: 10%;
+    }
+
+    .tour-text {
+        height: 200px;
+    }
+
+    .view-des {
+        padding: 0 150px;
+    }
+    
+    .btn-view {
+        width: 180px;
+        height: 50px;
+        font-size: 1.4rem;
+        
+    }
+
+
+    .holiday-name {
+        font-size: 6rem;
+    }
+
+    .resort-item {
+        width: 50%;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 740px) {
+    .slider-text--center {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+    .slider-text--footer {
+        font-size: 1.5rem;
+
+    }
+
+    .view-name , .top-reviews--title , .holiday-name , .resort-name {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+
+    .prev-slider , .next-slider {
+        display: none;
+    }
+
+    .holiday-des {
+        font-size: 1.5rem;
+        padding: 0 100px;
+    }
+}

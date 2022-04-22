@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color : #ffff;
+    --black-color : #0000;
+    --text-color  : #1c1c1c;
+    --primary-color : #3fd0d4;
+
+    --height-header : 90px; 
+}
+
+html {
+    font-size: 10px;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.line-hover {
+    position: relative;
+}
+
+.line-hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 0;
+    transition: width linear 0.3s;
+
+}
+
+.line-hover:hover::after {
+    width: 105%;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    display: none;
+}
+
+.open {
+    display: block !important; 
+}
+
+
+.modal-open {
+    display: flex !important; 
+}
+
+.modal-user {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal .modal-user {
+    display: none;
+}
+
+.modal-search {
+    background-color: #3ABDC1;
+    opacity: 0.8;
+}
+
+.modal-search--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 1 !important;
+}
+
+.modal-search--close:hover { 
+    cursor: pointer;
+}
+
+
+.modal-search--close i {
+    font-size: 6rem;
+    color: var(--white-color);
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.3);
+
+    display: none;
+}
